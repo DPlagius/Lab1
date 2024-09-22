@@ -32,7 +32,7 @@ namespace WpfLab1
             double upperLimit = Convert.ToDouble(tbUpperLimit.Text);
             int count = Convert.ToInt32(tbCount.Text);
             ICalculateIntegral integral = method();
-            tbAnswer.Text = Convert.ToString(integral.Calculate(lowerLimit, upperLimit, count, x => 31 * x - Math.Log10(5 * x) + 5));
+            tbAnswer.Text = Convert.ToString(integral.Calculate(lowerLimit, upperLimit, count, x => 31 * x - Math.Log(5 * x) + 5));
         }
 
         public ICalculateIntegral method()
