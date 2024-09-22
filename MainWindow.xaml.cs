@@ -24,5 +24,10 @@ namespace WpfLab1
         {
             InitializeComponent();
         }
+
+        private void btCalculate_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
