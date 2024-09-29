@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfLab1"
         mc:Ignorable="d"
-        Title="Попов Д.Б. 3-47" Height="450" Width="800">
-    <Grid>
+        Title="Попов Д.Б. 3-47" Height="445" Width="800">
+    <Grid Background="Gold">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width ="20"/>
             <ColumnDefinition Width="auto"/>
@@ -27,7 +27,7 @@
         <TextBlock Grid.Column="1" Grid.Row="2">Верхний предел</TextBlock>
         <TextBlock Grid.Column="1" Grid.Row="3">Количество разбиений</TextBlock>
         <TextBlock Grid.Column="1" Grid.Row="4">Метод</TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="5">Ответ:</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="5">Результат рассчёта:</TextBlock>
         <TextBox Name="tbLowerLimit" Grid.Column="2" Grid.Row="1" Margin="10 0 0 0"/>
         <TextBox Name="tbUpperLimit" Grid.Column="2" Grid.Row="2" Margin="10 0 0 0"/>
         <TextBox Name="tbCount" Grid.Column="2" Grid.Row="3" Margin="10 0 0 0"/>
@@ -36,6 +36,6 @@
             <ComboBoxItem>Средние прямоугольники</ComboBoxItem>
         </ComboBox>
         <TextBox Name="tbAnswer" Grid.Column="2" Grid.Row="5" Margin="10 0 0 0"/>
-        <Button Name="btCalculate" Grid.Column="1" Grid.Row="6"  Grid.ColumnSpan="2" Click="btCalculate_Click" >Найти</Button>
+        <Button Background="Green" Name="btCalculate" Grid.Column="1" Grid.Row="6"  Grid.ColumnSpan="2" Click="btCalculate_Click" >Рассчитать</Button>
     </Grid>
 </Window>
