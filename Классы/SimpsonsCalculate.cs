@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace WpfLab1.Классы
 {
-    internal class SimpsonsCalculate : ICalculateIntegral
+    public class SimpsonsCalculate : ICalculateIntegral
     {
         public double Calculate(double lower, double upper, int count, Func<double, double> func)
         {
+            if (lower > upper || lower <= 0 || count <= 0)
+                throw new ArgumentException("Wrong argumets");
             double step = (upper - lower) / count;
             double sum = func(lower) + func(upper);
             double x = lower + step;
