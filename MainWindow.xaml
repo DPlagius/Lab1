@@ -21,6 +21,9 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="1">Нижний предел</TextBlock>
@@ -36,6 +39,14 @@
             <ComboBoxItem>Средние прямоугольники</ComboBoxItem>
         </ComboBox>
         <TextBox Name="tbAnswer" Grid.Column="2" Grid.Row="5" Margin="10 0 0 0"/>
-        <Button Background="Green" Name="btCalculate" Grid.Column="1" Grid.Row="6"  Grid.ColumnSpan="2" Click="btCalculate_Click" >Рассчитать</Button>
+        <Button Background="Green" Name="btCalculate" Grid.Column="1" Grid.Row="9"  Grid.ColumnSpan="2" Click="btCalculate_Click" >Рассчитать</Button>
+        <TextBlock Grid.Column="1" Grid.Row="7">Результат паралельного рассчёта:</TextBlock>
+        <TextBox Name="tbParalelAnswer" Grid.Column="2" Grid.Row="7" Margin="10 0 0 0"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="6">Время рассчёта:</TextBlock>
+        <TextBox Name="tbTime" Grid.Column="2" Grid.Row="6" Margin="10 0 0 0"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="8">Время паралельного рассчёта:</TextBlock>
+        <TextBox Name="tbParalelTime" Grid.Column="2" Grid.Row="8" Margin="10 0 0 0"/>
     </Grid>
 </Window>
